@@ -1,0 +1,33 @@
+#
+# Swiftlint Configuration File
+#
+
+# Uncomment this if you want to disable rules.
+disabled_rules:
+  - force_cast
+  - force_try
+#  - colon
+#  - comma
+#  - control_statement
+
+# Paths to include during linting.
+included: 
+  - Sources
+
+# Paths to ignore during linting. 
+excluded: 
+  - Carthage
+  - Pods
+
+# Configurable rules can be customized.
+
+line_length: 200
+
+type_body_length:
+  - 500 # warning
+  - 1000 # error
+
+variable_name:
+  excluded:
+    - id
+    - URL
